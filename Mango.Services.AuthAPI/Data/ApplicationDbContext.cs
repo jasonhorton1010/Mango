@@ -11,6 +11,6 @@ namespace Mango.Services.AuthAPI.Data
         {
         }
 
-        DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     }
 }
