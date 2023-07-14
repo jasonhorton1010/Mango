@@ -5,11 +5,11 @@ using Newtonsoft.Json;
 
 namespace Mango.Web.Controllers
 {
-    public class CouponController1 : Controller
+    public class CouponController : Controller
     {
         private readonly ICouponService _couponService;
 
-        public CouponController1(ICouponService couponService)
+        public CouponController(ICouponService couponService)
         {
             _couponService = couponService;
         }
