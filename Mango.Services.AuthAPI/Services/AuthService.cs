@@ -2,6 +2,7 @@
 using Mango.Services.AuthAPI.Models;
 using Mango.Services.AuthAPI.Models.DTOs;
 using Mango.Services.AuthAPI.Services.IService;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 
 namespace Mango.Services.AuthAPI.Services
@@ -21,10 +22,10 @@ namespace Mango.Services.AuthAPI.Services
 
         public Task<LoginRequestDTO> Login(LoginRequestDTO requestDTO)
         {
-            
+            throw new NotImplementedException();
         }
 
-        public async Task<UserDTO> Register(RegistrationRequestDTO registrationRequestDTO)
+        public async Task<string> Register(RegistrationRequestDTO registrationRequestDTO)
         {
             ApplicationUser user = new()
             {
@@ -41,7 +42,7 @@ namespace Mango.Services.AuthAPI.Services
 
                 if(result.Succeeded)
                 {
-                    var userToReturn = _db.ApplicationUsers.First( u=> u.UserName == registrationRequestDTO.Email);
+                    var userToReturn = _db.ApplicationUsers.First(u => u.UserName == registrationRequestDTO.Email);
 
                     UserDTO userDTO = new()
                     {
@@ -51,7 +52,11 @@ namespace Mango.Services.AuthAPI.Services
                         PhoneNumber = userToReturn.PhoneNumber
                     };
 
-                    return userDTO;
+                    return "";
+                }
+                else
+                {
+                    return result.Errors.FirstOrDefault().Description;
                 }
             }
             catch
@@ -59,7 +64,7 @@ namespace Mango.Services.AuthAPI.Services
                 
             }
 
-            return new UserDTO();
+            return "Error Encoutered";
         }
     }
 }

@@ -4,7 +4,7 @@ namespace Mango.Services.AuthAPI.Services.IService
 {
     public interface IAuthService
     {
-        Task<UserDTO> Register(RegistrationRequestDTO reqistrationRequestDTO);
+        Task<string> Register(RegistrationRequestDTO reqistrationRequestDTO);
 
         Task<LoginRequestDTO> Login(LoginRequestDTO requestDTO);
     }
