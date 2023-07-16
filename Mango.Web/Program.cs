@@ -15,6 +15,7 @@ builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddScoped<ICouponService, CouponService>();
 
 StaticDetails.CouponAPIBase = builder.Configuration["ServiceUrls:CouponAPI"];
+StaticDetails.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
 
 var app = builder.Build();
 
