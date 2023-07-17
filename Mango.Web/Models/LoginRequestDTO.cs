@@ -1,4 +1,4 @@
-﻿namespace Mango.Web.Models.DTOs
+﻿namespace Mango.Web.Models
 {
     public class LoginRequestDTO
     {
