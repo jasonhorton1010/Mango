@@ -23,7 +23,7 @@ namespace Mango.Web.Services
             });
         }
 
-        public async Task<ResponseDTO?> LogInAsync(LoginRequestDTO loginRequestDTO)
+        public async Task<ResponseDTO?> LoginAsync(LoginRequestDTO loginRequestDTO)
         {
             return await _baseService.SendAsync(new RequestDTO()
             {
