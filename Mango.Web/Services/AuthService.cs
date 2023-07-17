@@ -33,7 +33,7 @@ namespace Mango.Web.Services
             });
         }
 
-        public async Task<ResponseDTO?> RegisterInAsync(RegistrationRequestDTO registrationRequestDTO)
+        public async Task<ResponseDTO?> RegisterAsync(RegistrationRequestDTO registrationRequestDTO)
         {
             return await _baseService.SendAsync(new RequestDTO()
             {

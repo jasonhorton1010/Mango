@@ -5,7 +5,7 @@ namespace Mango.Web.Services.IService
     public interface IAuthService
     {
         Task<ResponseDTO?> LogInAsync(LoginRequestDTO loginRequestDTO);
-        Task<ResponseDTO?> RegisterInAsync(RegistrationRequestDTO registrationRequestDTO);
+        Task<ResponseDTO?> RegisterAsync(RegistrationRequestDTO registrationRequestDTO);
         Task<ResponseDTO?> AssignRoleAsync(RegistrationRequestDTO registrationRequestDTO);
     }
 }
