@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{F7048B77-20E3-490B-A0AE-1895B4109975}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{09F9333E-57CB-437C-8917-06C62A1FFDA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{09F9333E-57CB-437C-8917-06C62A1FFDA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ProductAPI", "Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj", "{927C2337-22F7-4661-9086-6E581A6FC375}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{09F9333E-57CB-437C-8917-06C62A1FFDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F9333E-57CB-437C-8917-06C62A1FFDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F9333E-57CB-437C-8917-06C62A1FFDA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927C2337-22F7-4661-9086-6E581A6FC375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927C2337-22F7-4661-9086-6E581A6FC375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927C2337-22F7-4661-9086-6E581A6FC375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927C2337-22F7-4661-9086-6E581A6FC375}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{DCD78CEA-218E-4391-BB32-5B7DDF6D356F} = {AAF5F37D-0195-47CF-86AE-CFB6A07D84D1}
 		{F7048B77-20E3-490B-A0AE-1895B4109975} = {A189DE65-B8C9-4183-BD11-20AB5CB33AA1}
 		{09F9333E-57CB-437C-8917-06C62A1FFDA9} = {AAF5F37D-0195-47CF-86AE-CFB6A07D84D1}
+		{927C2337-22F7-4661-9086-6E581A6FC375} = {AAF5F37D-0195-47CF-86AE-CFB6A07D84D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4EDF0C10-9E75-434A-A4FC-152DE8DB09AC}
